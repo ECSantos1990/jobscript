@@ -19,9 +19,11 @@
     margin: 10px 0px 0px 0px;
 }
 
-#text-search-box:active {
-    outline: none;
-    outline-width: 0px;
+#text-search-box:focus {
+  border-color: #ced4da; /* default B5 color or set your own color*/
+  /* border: none !important;  */
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .search-jobs {
@@ -125,7 +127,7 @@
 
 #emp-card-footer, #emp-card-aor {
     background-color: grey;
-    color: white;
+    color: whitesmoke;
     font-size: 11px;
     padding: 3px;
     border-radius: 3px;
@@ -162,11 +164,11 @@
 }
 
 .modal-body-salary {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .modal-body-aor {
-    font-size: 11px;
+    font-size: 12px;
     font-style: italic;
     padding-bottom: 10px;
 }

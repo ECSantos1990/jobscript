@@ -12,6 +12,13 @@
   padding: 20px;
 }
 
+#text-developers-search-box {
+  border-color: #ced4da; /* default B5 color or set your own color*/
+  /* border: none !important;  */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* JOBSEEKER CARDS STYLE  */
 
 
@@ -19,19 +26,18 @@
   text-align: end;
   color: white;
   font-size: 14px;
-  font-weight: bold;
   border-top-left-radius: 2em;
   background-color: #f27a7a;
 }
 
 #dev-card-title {
-  font-size: 25px;
+  font-size: 16px;
   padding: 0, 4px;
   padding-top: 9px;
 }
 
 #dev-card-location {
-  font-size: 15px;
+  font-size: 13px;
   padding: 0, 4px;
   color: grey;
 }
@@ -45,6 +51,7 @@
   padding: 4px;
   margin: 0 5px;
   border-radius: 4px;
+  font-size: 12px;
 }
 
 .btn-view-more-job {
@@ -101,4 +108,71 @@
     width: 60%;
     /* background-color: white; */
   }
+}
+
+
+/* MODAL STYLE  */
+
+#basic-info-tag {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  /* text-decoration: underline; */
+  padding-left: 40px;
+}
+
+#basic-info-value-tag {
+  font-size: 12px;
+  /* font-weight: bold; */
+  padding-top: 3px;
+  padding-left: 40px;
+}
+
+#work-exp-company {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 70px;
+}
+
+#work-exp-pos, #work-exp-tenure {
+  font-size: 12px;
+  padding-left: 70px;
+}
+/* 
+#work-exp-row {
+  padding-left: 10px;
+} */
+
+
+#send-message-form {
+  padding: 20px;
+  width: 100%;
+}
+
+#view-jobseeker-info-modal-form {
+  border-radius: 25px;
+}
+
+#btn-send-message-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#valueble-skills-list-header {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  /* padding-left: -20px; */
+}
+
+#valuable-skills-list-value {
+  font-size: 12px;
+  /* padding-left: 10px; */
+}
+
+#valuable-skills-list-ul {
+  padding-left: 18px;
 }
