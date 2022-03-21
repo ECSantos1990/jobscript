@@ -24,16 +24,12 @@ const JobSeekerDash = () => {
   }
 
   
-  //This will get the ID of the  selected card
-  // and filter it and assign it to the array
   const handlesShowModal = (clickedCardValue) => {
     setShowModal(clickedCardValue[1]);
     arrayJobDetails = JobList.filter(item => item.id === clickedCardValue[0]).map(list => { return list });
   }
 
-  
-  //This will get the value of the text
-  //on every input (onchange evemt)
+
   let searchJobList = (e) => {
     e.preventDefault();
     setSearchJob(txtSearch.current.value);
@@ -65,7 +61,7 @@ const JobSeekerDash = () => {
                                   </div>
                 </div>
           </div>
-          <div data-aos="fade-up" id='card-display-container' className="container pb-5">
+          <div id='card-display-container' className="container pb-5">
             <div className="row">
               {
                 JobList.filter((i) => {
@@ -80,7 +76,6 @@ const JobSeekerDash = () => {
                 }).map((items) => {
                   return (
                     <div id='display-card-columns' className="col">
-                      {(items.id != null) ? 
                       <JobSeekerDashCards handlesShowModal={handlesShowModal} 
                                 id={items.id} 
                                 company={items.company}
@@ -90,7 +85,7 @@ const JobSeekerDash = () => {
                                 category={items.category} 
                                 title={items.jobTitle} 
                                 snippets={items.jobSnippet} 
-                                showData={true}/> : <Underconstruction />}
+                                showData={true}/>
                     </div>
                   )
                 })
@@ -143,9 +138,6 @@ const JobSeekerDash = () => {
                               <button className='btn btn-outline-danger' onClick={() => setShowModal(false)}>Close</button>
                           </div>
                       </Modal.Body>
-                    {/* <Modal.Footer className='modal-footer-display'>
-                          <div>&copy; 2022 JobScript - All Rights Reserved</div>
-                      </Modal.Footer> */}
                   </Modal> 
                 )
               })
