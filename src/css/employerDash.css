@@ -13,11 +13,10 @@
 }
 
 #text-developers-search-box {
-  border-color: #ced4da; 
+  border-color: #ced4da;
   outline: none !important;
   box-shadow: none !important;
 }
-
 
 #employer-card-header {
   text-align: end;
@@ -74,8 +73,6 @@
   transition: 0.3s ease-in-out;
 }
 
-
-
 .devImg {
   width: 40%;
   border-radius: 8px;
@@ -104,24 +101,18 @@
   }
   .searchboxEmployer {
     width: 60%;
-
   }
 }
-
-
-/* MODAL STYLE  */
 
 #basic-info-tag {
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
-  /* text-decoration: underline; */
   padding-left: 40px;
 }
 
 #basic-info-value-tag {
   font-size: 12px;
-  /* font-weight: bold; */
   padding-top: 3px;
   padding-left: 40px;
 }
@@ -133,12 +124,11 @@
   padding-left: 70px;
 }
 
-#work-exp-pos, #work-exp-tenure {
+#work-exp-pos,
+#work-exp-tenure {
   font-size: 12px;
   padding-left: 70px;
 }
-
-
 
 #send-message-form {
   padding-top: 20px;
@@ -165,7 +155,6 @@
 
 #valuable-skills-list-value {
   font-size: 12px;
-  /* padding-left: 10px; */
 }
 
 #valuable-skills-list-ul {
